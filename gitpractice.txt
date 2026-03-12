@@ -2,3 +2,5 @@ I am learning Devops
 I am learning Python
 I am learning AWS 
 I am learning Devops, python, AWS in QT.
+git is used to track the changes in local
+I learn how to connect git local repo to git remote 
