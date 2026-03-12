@@ -2,3 +2,5 @@ I am learning git
 git is used to track changes
 git is very simple.
 I am learning git 
+git is version control
+git have commands only
