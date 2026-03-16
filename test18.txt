@@ -1,0 +1,3 @@
+Welcome to git 
+Welcome to github
+git is very easy to learn and understand.
