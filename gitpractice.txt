@@ -5,3 +5,5 @@ I am learning Devops, python, AWS in QT.
 git is used to track the changes in local
 I learn how to connect git local repo to git remote 
 git is used to track the content in files 
+git runs based on commands 
+git track u r changes in code and maintain commit history
