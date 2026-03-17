@@ -70,6 +70,8 @@ Example:
 while True:
     print("1. Sale")
     print("2. Inventory")
+    print("3. Exit)
+    select an option
 ```
 
 ---
