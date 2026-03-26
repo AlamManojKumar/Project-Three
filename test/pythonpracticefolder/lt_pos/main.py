@@ -23,25 +23,5 @@ while True:
              print("Invalid option ")
        else:
            print("Invalid option ")
-def add_items(itemname:str,
-              description:str,
-              price:int|float,
-              quantity:int)->bool:
-    print("Enter the itemname: ")
-    itemname=input("Enter the itemname: ")
-    print("Enter the price: ")
-    price=input("Enter the price: ")
-    print("Enter the quantity: ")
-    quantity = input("Enter the quantity: ")
-
-
-
-
-
-
-
-
-
-
-if __name__ == "__main__":
-    main_menu()
+     if __name__ == "__main__":
+         main_menu()
