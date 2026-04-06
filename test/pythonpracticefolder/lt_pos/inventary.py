@@ -84,9 +84,9 @@ def search_item_by_name(item_name:str)->list[dict]|None:
 
        """
        results = []
-       for  item in ITEMS:
+       for item in ITEMS:
            if item_name.lower() in item['name'].lower():
-              results.append(item)
+            results.append(item)
        return results or None
  
        
