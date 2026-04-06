@@ -74,20 +74,20 @@ def update_items(item_id:int,
     "price": price
     }
 def search_item_by_name(item_name:str)->list[dict]|None:
-     """This method is used to search item by name
+       """This method is used to search item by name
 
-     Args:
-       name: name of the product
+       Args:
+           item_name: name of the product
 
-     Returns:
-        list[dict]|None: items found
+       Returns:
+             list[dict]| None: items found, or None if no match
 
-     """
-     results = []
-     for id,item in ITEMS.items():
-         if name.lower() in item['name'].lower():
-             results.append(item)
-    return results
+       """
+       results = []
+       for  item in ITEMS:
+           if item_name.lower() in item['name'].lower():
+              results.append(item)
+       return results or None
  
        
    
