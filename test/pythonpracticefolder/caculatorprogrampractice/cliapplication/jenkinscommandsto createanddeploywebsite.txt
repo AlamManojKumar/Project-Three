@@ -1,0 +1,64 @@
+ ###Jenkins installation and deployment steps for practice.
+    1 sudo apt update
+    2  sudo apt install -y fontconfig openjdk-21-jdk
+    3  java -version
+    4  sudo mkdir -p /etc/apt/keyrings
+    5  sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key
+    6  ls -lh /etc/apt/keyrings/jenkins-keyring.asc
+    7  gpg --show-keys /etc/apt/keyrings/jenkins-keyring.asc
+    8  cat /etc/apt/keyrings/jenkins-keyring.asc
+    9  echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+   10  cat /etc/apt/sources.list.d/jenkins.list
+   11  sudo apt update
+   12  sudo apt install -y jenkins
+   13  sudo systemctl start jenkins
+   14  sudo systemctl enable jenkins
+   15  sudo systemctl status jenkins
+   16  sudo systemctl start jenkins
+   17  sudo systemctl status jenkins
+   18  sudo systemctl is-active jenkins
+   19  curl -I http://localhost:8080
+   20  sudo systemctl status jenkins
+   21  sudo ufw allow 8080
+   22  sudo ufw allow OpenSSH
+   23  sudo ufw enable
+   24  sudo ufw status
+   25  curl -I http://65.2.148.104:8080
+   26  history
+   27  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   28  sudo apt update
+   29  sudo apt install -y apache2
+   30  sudo systemctl enable apache2
+   31  sudo systemctl status apache2
+   32  sudo usermod -aG www-data jenkins
+   33  sudo chmod -R 775 /var/www/html
+   34  sudo systemctl restart jenkins
+   35  sudo mkdir -p /var/www/html/mywebsite
+   36  sudo cp -r /tmp/oxer/* /var/www/html/mywebsite/
+   37  cd /tmp
+   38  wget https://templatemo.com/tm-zip-files-2020/templatemo_619_axis_industrial.zip
+   39  ls -lh /tmp/templatemo_619_axis_industrial.zip
+   40  ls
+   41  unzip templatemo_619_axis_industrial.zip
+   42  sudo apt install unzip -y
+   43  unzip templatemo_619_axis_industrial.zip
+   44  ls
+   45  ls /tmp/
+   46  ls
+   47  cd templatemo_619_axis_industrial
+   48  sudo cp -r /tmp/templatemo_619_axis_industrial/* /var/www/html/mywebsite/
+   49  sudo chown -R www-data:www-data /var/www/html/mywebsite/
+   50  sudo chmod -R 755 /var/www/html/mywebsite/
+   51  pwd
+   52  ls /tmp/templatemo_619_axis_industrial/
+   53  sudo cp -r /tmp/templatemo_619_axis_industrial/* /var/www/html/mywebsite/
+   54  sudo chown -R www-data:www-data /var/www/html/mywebsite/
+   55  sudo chmod -R 755 /var/www/html/mywebsite/
+   56  ls /var/www/html/mywebsite/
+   57  sudo chown -R www-data:www-data /var/www/html/mywebsite/
+   58  sudo chmod -R 755 /var/www/html/mywebsite/
+   59  sudo systemctl status apache2
+   60  sudo ufw allow 80/tcp
+   61  sudo ufw allow 'Apache Full'
+   62  sudo ufw reload
+   63  sudo ufw status

@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Khaleja",
+        "Year": "2003",
+        "Actor": "MaheshBabu",
+        "Cast": [
+            "A",
+            "B",
+            "C"
+        ],
+        "HitorFlop": "Flop"
+    }
+]

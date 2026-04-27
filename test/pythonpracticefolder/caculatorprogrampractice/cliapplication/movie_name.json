@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Arya",
+        "Hero": "AlluArjun",
+        "year": "2004",
+        "cast": [
+            "A",
+            "B",
+            "c"
+        ],
+        "Hit": "Hit"
+    }
+]
